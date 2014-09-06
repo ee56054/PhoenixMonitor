@@ -6,10 +6,10 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class TimeBean implements LineGraphData, Serializable, MostActiveData {
 
-	int interval;
-	String count;
-	String userName;
-	Date loginTime;
+	private int interval;
+	private String count;
+	private String userName;
+	private Date loginTime;
 
 	/**
 	 * @return the interval

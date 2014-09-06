@@ -4,5 +4,7 @@ public interface LineGraphData {
 	public int getValue();
 
 	public String getColumnName();
+    
+    
 
 }
