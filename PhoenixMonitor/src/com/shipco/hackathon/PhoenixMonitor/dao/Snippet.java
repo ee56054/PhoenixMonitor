@@ -28,6 +28,7 @@ public class Snippet {
 			for(TimeBean timeBean: timeBeans){
 				System.out.println(timeBean.getName() + " " + timeBean.getTime());
 			}
+            //Test add comment for git
 
 		} catch (Exception e) {
 			e.printStackTrace();
