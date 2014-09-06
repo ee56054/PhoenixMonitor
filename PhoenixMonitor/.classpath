@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/workspace/test/PhoenixMonitor/war/WEB-INF/lib/gwt-visualization.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/test/PhoenixMonitor/war/WEB-INF/lib/mybatis-3.2.2.jar" sourcepath="C:/Users/fhchi/.m2/repository/org/mybatis/mybatis/3.2.4/mybatis-3.2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/fhchi/.m2/repository/org/mybatis/mybatis/3.2.4/mybatis-3.2.4-javadoc.jar!/"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.mybatis"/>
+			<attribute name="maven.artifactId" value="mybatis"/>
+			<attribute name="maven.version" value="3.2.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/ojdbc6-11.2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-bootstrap-2.3.2.0.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

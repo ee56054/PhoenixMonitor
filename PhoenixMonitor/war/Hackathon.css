@@ -1,0 +1,231 @@
+/** Add css rules here for your application. */
+.header_table {
+	background-color: #76C1F3;
+	height: 30px;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+.title_font {
+	font-size: 30px;
+	color: white;
+	font-family: Arial;
+	padding-left: 3px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.subtitle_font {
+	font-size: 20px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.user_label_font {
+	font-size: 11px;
+	color: #5D7599;
+	font-family: Arial;
+	padding-left: 3px;
+}
+
+.user_details_font {
+	font-size: 15px;
+	color: white;
+	font-family: Arial;
+	padding-left: 1px;
+	float: left;
+	padding-right: 3px;
+	margin-top: -5px;
+	padding-bottom: 2px;
+}
+
+.contact_label_font {
+	font-size: 11px;
+	color: #bdc3c7;
+	font-family: Arial;
+	padding-left: 3px;
+}
+
+.lineGraphView{
+	margin: 20px;
+	width: 100%;
+}
+
+.contact_details_font {
+	font-size: 15px;
+	color: #59718A;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding-left: 1px;
+	float: left;
+	padding-right: 3px;
+	margin-top: -5px;
+	padding-bottom: 2px;
+}
+
+.contact_table_title {
+	background-color: #525D5E;
+	height: 45px;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.contact_table {
+	width: 100%;
+	background-color: white;
+	border-spacing: 0px;
+	margin-top: 20px;
+}
+
+.hero {
+	padding: 0;
+}
+
+.main_container {
+ 
+	padding: 50px;
+}
+
+.composite_monitor_big_label {
+	font-size: 300%;
+	font-family: "Alegreya Sans SC";
+	font-weight: bolder;
+}
+
+.composite_monitor_flextable {
+	width: 100%;
+	margin: 10px;
+}
+
+.graph_container {
+	height: 100%;
+	border-spacing: 15px;
+}
+
+/* 
+* Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app)
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+* Most GWT widgets already have a style name defined
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+* Set ids using widget.getElement().setId("idOfElement")
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.label{
+	font-weight:bold;
+}
+
+
+
+.CSSTableGenerator {
+margin: auto;
+
+width:60%;	box-shadow: 10px 10px 5px #888888;
+border:1px solid #000000;
+
+-moz-border-radius-bottomleft:0px;
+-webkit-border-bottom-left-radius:0px;
+border-bottom-left-radius:0px;
+
+-moz-border-radius-bottomright:0px;
+-webkit-border-bottom-right-radius:0px;
+border-bottom-right-radius:0px;
+
+-moz-border-radius-topright:0px;
+-webkit-border-top-right-radius:0px;
+border-top-right-radius:0px;
+
+-moz-border-radius-topleft:0px;
+-webkit-border-top-left-radius:0px;
+border-top-left-radius:0px;
+}.CSSTableGenerator table{
+width:70%;
+height:70%;
+margin: auto;
+}.CSSTableGenerator tr:last-child td:last-child {
+-moz-border-radius-bottomright:0px;
+-webkit-border-bottom-right-radius:0px;
+border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+-moz-border-radius-topleft:0px;
+-webkit-border-top-left-radius:0px;
+border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+-moz-border-radius-topright:0px;
+-webkit-border-top-right-radius:0px;
+border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+-moz-border-radius-bottomleft:0px;
+-webkit-border-bottom-left-radius:0px;
+border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+
+}.CSSTableGenerator tr:nth-child(odd){ background-color:#aad4ff; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }
+.CSSTableGenerator td{
+vertical-align:middle;
+
+
+border:1px solid #000000;
+border-width:0px 1px 1px 0px;
+text-align:left;
+padding:3px;
+font-size:10px;
+font-family:arial;
+font-weight:normal;
+color:#000000;
+}.CSSTableGenerator tr:last-child td{
+border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+background-color:#005fbf;
+border:0px solid #000000;
+text-align:left;
+border-width:0px 0px 1px 1px;
+font-size:14px;
+font-family:arial;
+font-weight:bold;
+color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+background-color:#005fbf;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+border-width:0px 0px 1px 1px;
+} */

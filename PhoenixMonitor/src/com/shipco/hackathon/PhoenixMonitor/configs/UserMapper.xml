@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shipco.hackathon.PhoenixMonitor.dao.UserLoginDao">
+	<select id="selectMinuteData" resultType="com.shipco.hackathon.PhoenixMonitor.shared.TimeBean">
+		SELECT 		TO_NUMBER(TO_CHAR(t_login_time,'SS'))+1 AS "interval", COUNT(*) AS "count" 
+		FROM 		gen_user_login_stat 
+		WHERE 		TO_CHAR(t_login_time,'DDMMYYYYSS') > TO_CHAR(SYSDATE - 60/86400,'DDMMYYYYSS') 
+		GROUP BY 	TO_CHAR(t_login_time,'SS') 
+		ORDER BY 	"interval"
+	</select>
+	<select id="selectHourData" resultType="com.shipco.hackathon.PhoenixMonitor.shared.TimeBean">
+		SELECT 		TO_NUMBER(TO_CHAR(t_login_time,'MI'))+1 AS "interval", COUNT(*) AS "count" 
+		FROM 		gen_user_login_stat 
+		WHERE 		TO_CHAR(t_login_time,'DDMMYYYYMI') > TO_CHAR(SYSDATE - 1/1440,'DDMMYYYYMI') 
+		GROUP 		BY TO_CHAR(t_login_time,'MI') 
+		ORDER BY 	"interval"
+	</select>
+	<select id="selectDayData" resultType="com.shipco.hackathon.PhoenixMonitor.shared.TimeBean">
+		SELECT 		TO_NUMBER(TO_CHAR(t_login_time,'HH24'))+1 AS "interval", COUNT(*) AS "count" 
+		FROM 		gen_user_login_stat 
+		WHERE 		TO_CHAR(t_login_time,'DDMMYYYY') = TO_CHAR(SYSDATE,'DDMMYYYY') 
+		GROUP BY 	TO_CHAR(t_login_time,'HH24') 
+		ORDER BY 	"interval"
+	</select>
+	
+	<select id="selectLastLogin" resultType="com.shipco.hackathon.PhoenixMonitor.shared.TimeBean">
+ 		SELECT 		C_LDAP_USERNAME AS "userName" ,  T_LOGIN_TIME AS "loginTime"
+		FROM 		gen_user_login_stat
+		WHERE 		
+		<![CDATA[ ROWNUM <= 5 ]]>
+		 
+		ORDER BY    T_LOGIN_TIME 
+	</select>
+	<select id="selectTotalOnline" resultType="com.shipco.hackathon.PhoenixMonitor.shared.TimeBean">
+		SELECT COUNT(1) AS "interval"
+		FROM GEN_USER_LOGIN_STAT
+		WHERE T_LOGOUT_TIME IS NULL
+		ORDER BY T_LOGIN_TIME DESC
+	</select>
+	
+	
+
+</mapper>

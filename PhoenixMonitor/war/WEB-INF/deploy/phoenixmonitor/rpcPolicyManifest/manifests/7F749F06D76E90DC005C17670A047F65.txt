@@ -1,0 +1,2 @@
+serviceClass: com.shipco.hackathon.PhoenixMonitor.client.UserLoginService
+path: 5BC7BAE9114601A0142A31FF0B2041E3.gwt.rpc
